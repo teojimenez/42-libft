@@ -1,9 +1,8 @@
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void *ft_memset(void *str, int value, size_t num)
 {
-    int i;
+    size_t	i;
     char *p = str;//convertir de puntero constante a no constante
 
     i = 0;
