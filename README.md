@@ -11,7 +11,7 @@ CC = gcc
 $(NAME):
 	$(CC) -c $(FLAGS) $(SRC)
 	ar rc $(NAME) $(OBJECTS)
-//al hacer make se creará el .a
+//al hacer make se creará el .a, que es "como el compilador de la libreria"
 //(primero se compila con las flags y los archivos
 //(ar rc: (crea el .a con el nombre y todos ,os ft_*.c))
 all: $(NAME)
