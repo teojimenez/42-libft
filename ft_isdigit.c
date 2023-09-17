@@ -1,15 +1,25 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: teojimen <teojimen@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/17 00:25:09 by teojimen          #+#    #+#             */
+/*   Updated: 2023/09/17 00:25:29 by teojimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	if (c > 47 && c < 58)
-		return (2048);//true
-	return (0);//false
-}
-
-int main()
-{
-	printf("%i",ft_isdigit(22));
-    printf("%i",isdigit(22));
+		return (2048);
 	return (0);
 }
+
+// int main()
+// {
+// 	printf("%i",ft_isdigit(22));
+//     printf("%i",isdigit(22));
+// 	return (0);
+// }

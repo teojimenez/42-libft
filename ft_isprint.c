@@ -1,15 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: teojimen <teojimen@student.42barcel>       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/17 00:28:16 by teojimen          #+#    #+#             */
+/*   Updated: 2023/09/17 00:28:36 by teojimen         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c > 31 && c < 127)
-		return (16384);//true
-	return (0);//false
-}
-
-int main()
-{
-	printf("%i",ft_isprint(126));
-    printf("%i",isprint(126));
+		return (16384);
 	return (0);
 }
+
+// int main()
+// {
+// 	printf("%i",ft_isprint(126));
+//     printf("%i",isprint(126));
+// 	return (0);
+// }

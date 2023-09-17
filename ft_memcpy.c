@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: teojimen <teojimen@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/16 23:48:14 by teojimen          #+#    #+#             */
-/*   Updated: 2023/09/16 23:48:19 by teojimen         ###   ########.fr       */
+/*   Created: 2023/09/17 00:29:40 by teojimen          #+#    #+#             */
+/*   Updated: 2023/09/17 00:32:14 by teojimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	if (c > 64 && c < 91)
-		return (1024);
-	else if (c > 96 && c < 123)
-		return (1024);
-	return (0);
-}
-//1024: true, =: false
+	size_t	i;
+	char	*c_src;
+	char	*c_dest;
 
-// int main()
-// {
-// 	printf("%i",ft_isalpha(80));
-//     printf("%i",isalpha(80));
-// 	return (0);
+	i = 0;
+	c_src = (char *)src;
+	c_dest = (char *)dest;
+	while (i < n)
+		c_dest[i++] = c_src[i];
+	c_dest[i] = '\0';
+}
+
+// int main() {
+//   char src[] = "Hola, mundo!";
+//   char dest[20];
+
+//   ft_memcpy(dest, src , 4);
+//   return 0;
 // }

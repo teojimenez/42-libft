@@ -10,12 +10,13 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME       = libft.a
-FLAGS      = -Wall -Wextra -Werror
-SRC = \ ft_isalnum.c ft_strlen.c ft_memset.c ft_isprint.c \
+NAME = libft.a
+FLAGS = -Wall -Wextra -Werror
+SRC = \
+		ft_isalnum.c ft_strlen.c ft_memset.c ft_isprint.c \
 		ft_isdigit.c ft_isascii.c ft_isalpha.c ft_bzero.c \
 		ft_memmove.c ft_strlcpy.c ft_strlcat ft_toupper.c \
-		ft_tolower.c \
+		ft_tolower.c 
 OBJECTS = $(SRC:.c=.o)
 CC = gcc
 
