@@ -6,7 +6,7 @@
 /*   By: teojimen <teojimen@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 10:27:32 by teojimen          #+#    #+#             */
-/*   Updated: 2023/09/17 02:27:03 by teojimen         ###   ########.fr       */
+/*   Updated: 2023/09/18 11:15:18 by teojimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		ft_isascii(int c);
 int		ft_isalpha(int c);
 void	ft_bzero(void *str, size_t n);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	ft_strlcat(char *dst, const char *src, size_t size);
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 void	*ft_memcpy(void *dest, const void *src, size_t n); //?

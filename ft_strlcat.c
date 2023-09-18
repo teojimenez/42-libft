@@ -6,7 +6,7 @@
 /*   By: teojimen <teojimen@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/17 01:19:18 by teojimen          #+#    #+#             */
-/*   Updated: 2023/09/17 01:21:17 by teojimen         ###   ########.fr       */
+/*   Updated: 2023/09/18 11:14:58 by teojimen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 //#include <string.h>
 //#include <stdio.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	y;
