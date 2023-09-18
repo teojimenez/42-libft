@@ -31,5 +31,6 @@ int		ft_tolower(int c);
 void	*ft_memcpy(void *dest, const void *src, size_t n); //?
 void	*ft_memmove(void *dest, const void *src, size_t n); //?
 void	*ft_memset(void *str, int value, size_t num);
+char	*ft_strchr(const char *str, int c);
 
 #endif
