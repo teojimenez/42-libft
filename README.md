@@ -18,10 +18,10 @@ all: $(NAME)
 
 clean:
 	rm -rf $(OBJECTS)
-//elimina todos los .c
+//elimina todos los .o
 fclean: clean
 	rm -rf $(NAME)
-//elimina todos los .c y libft.a
+//elimina todos los .o y libft.a
 re: fclean all
 //lo borra todo
 
