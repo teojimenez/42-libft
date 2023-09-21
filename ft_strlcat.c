@@ -14,23 +14,45 @@
 //#include <string.h>
 //#include <stdio.h>
 
-size_t	ft_strlcat(char *dest, const char *src, size_t size)
-{
-	size_t	i;
-	size_t	y;
+// size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
+// {
+// 	size_t	i;
+// 	size_t	y;
 
-	i = 0;
+// 	y = 0;
+// 	i = ft_strlen(dest) - 1;
+// 	while (src[y] != '\0' && i < dstsize)
+// 	{
+// 		dest[i] = src[y];
+// 		y++;
+// 		i++;
+// 	}
+// 	dest[i] = '\0';
+// 	return ((size_t)ft_strlen(dest) + dstsize);
+// }
+
+size_t    ft_strlcat(char *dest, const char *src, size_t dstsize)
+{
+    size_t    i;
+    size_t    y;
+	size_t    srcLen;
+    size_t    destLen;
+
+	srcLen = (size_t)ft_strlen(src);
+	destLen = (size_t)ft_strlen(dest);
+	i = destLen;
 	y = 0;
-	while (dest[i] != '\0')
-		i++;
-	while (src[y] != '\0' && i < size - 1)
+	while (src[y] != '\0' && i < dstsize - 1 && dstsize > 0)
 	{
 		dest[i] = src[y];
-		y++;
 		i++;
+		y++;
 	}
-	dest[i] = '\0';
-	return (ft_strlen(dest));
+	if (dest[i] != '\0')
+		dest[i] = '\0';
+	if (dstsize < destLen)
+		destLen = dstsize;
+	return (destLen + srcLen);
 }
 
 // int main(void)

@@ -10,12 +10,12 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-char *strnstr(const char *haystack, const char *needle, size_t len)
-{
+// char *strnstr(const char *haystack, const char *needle, size_t len)
+// {
     
-}
+// }
 
 // The strnstr() function locates the first occurrence of the null-termi-
 //      nated string needle in the string haystack, where not more than len char-

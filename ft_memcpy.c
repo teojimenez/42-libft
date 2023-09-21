@@ -14,21 +14,23 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	char	*c_src;
-	char	*c_dest;
+	size_t i;
+	char *c_src;
+	char *c_dest;
 
 	i = 0;
 	c_src = (char *)src;
 	c_dest = (char *)dest;
+	if (!dest && !src)
+		return ((void *)c_dest);
 	while (i < n)
 	{
 		c_dest[i] = c_src[i];
 		i++;
 	}
-	c_dest[i] = '\0';
-	return (c_dest);
+	return ((void *)c_dest);
 }
+
 
 // int main() {
 //   char src[] = "Hola, mundo!";
