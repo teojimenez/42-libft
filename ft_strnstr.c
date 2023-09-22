@@ -10,11 +10,48 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "libft.h"
+#include "libft.h"
 
-// char *strnstr(const char *haystack, const char *needle, size_t len)
-// {
-    
+char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+    char *p_needle;
+    char *p_haystack;
+    size_t i;
+
+    if ((!needle && len <= 0))
+        return ((char *)haystack);
+    if ((!needle && !haystack && len <= 0))
+        return ((char *)haystack);
+
+    while (haystack && len > 0)
+    {
+        i = len;
+        p_haystack = (char *)haystack;
+        p_needle = (char *)needle;
+        while (*p_haystack == *p_needle && i > 0)
+        {
+            if (i == 0 && !p_needle)
+                return (0);
+            i--;
+            p_needle++;
+            p_haystack++;
+        }
+        if (*p_needle == '\0')
+            return ((char *)haystack);
+        len--;
+        haystack++;
+    }
+    return (0);
+}
+
+// #include <stdio.h>
+// #include <string.h>
+
+// int main() {
+//     // Write C code here
+//     printf("%s", strnstr("hola me teo", "me", 0));
+//     //char *strnstr(const char *haystack, const char *needle, size_t len);
+//     return 0;
 // }
 
 // The strnstr() function locates the first occurrence of the null-termi-
