@@ -18,23 +18,26 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
     char *p_haystack;
     size_t i;
 
-    if ((!needle && len <= 0))
+    if (*(char *)haystack == '\0' && *(char *)needle == '\0')
         return ((char *)haystack);
-    if ((!needle && !haystack && len <= 0))
+    else if (*(char *)haystack == '\0')
+        return (0);
+    else if (*(char *)needle == '\0')
         return ((char *)haystack);
-
     while (haystack && len > 0)
     {
         i = len;
         p_haystack = (char *)haystack;
         p_needle = (char *)needle;
-        while (*p_haystack == *p_needle && i > 0)
+        while (*p_haystack == *p_needle && i > 0 && *p_haystack != '\0')//aqui
         {
             if (i == 0 && !p_needle)
                 return (0);
             i--;
             p_needle++;
             p_haystack++;
+            if (i != 0 && *p_haystack == '\0' && *p_needle)
+                return (0);
         }
         if (*p_needle == '\0')
             return ((char *)haystack);
@@ -48,8 +51,8 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 // #include <string.h>
 
 // int main() {
-//     // Write C code here
-//     printf("%s", strnstr("hola me teo", "me", 0));
+//     printf("MAIN:%s\n", strnstr("abc", "abcdef", 5));
+//     printf("MINE:%s", ft_strnstr("abc", "abcdef", 5));
 //     //char *strnstr(const char *haystack, const char *needle, size_t len);
 //     return 0;
 // }
