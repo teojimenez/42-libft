@@ -29,3 +29,5 @@ char	*ft_strdup(const char *s1)
     // The strdup() function allocates sufficient memory for a copy of the
     //  string s1, does the copy, and returns a pointer to it.  The pointer may
     //  subsequently be used as an argument to the function free(3).
+
+//se puede usar para devolver punteros vacios;
