@@ -38,18 +38,17 @@
 
 char    *ft_strrchr(const char *str, int c)
 {
-    int i;
+	int	i;
 
-    i = ft_strlen(str);
-    while (i >= 0)
-    {
-        if (str[i] == (char)c)
-    		return ((char *) &str[i]);
+	i = ft_strlen(str);
+	while (i >= 0)
+	{
+		if (str[i] == (char)c)
+			return ((char *) &str[i]);
 		i--;
-    }
-    return(0);
+	}
+	return(0);
 }
-
 
 // #include <stdio.h>
 // #include <string.h>
