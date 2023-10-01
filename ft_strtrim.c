@@ -45,6 +45,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	if (!str)
 		return (0);
 	return (str);
+
 }
 
 // s1: La string que debe ser recortada.
