@@ -36,7 +36,7 @@
 //     return (0);
 // }
 
-char    *ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 

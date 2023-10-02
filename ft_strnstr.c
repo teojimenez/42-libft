@@ -12,39 +12,39 @@
 
 #include "libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    char *p_needle;
-    char *p_haystack;
-    size_t i;
+	char	*p_needle;
+	char	*p_haystack;
+	size_t	i;
 
-    if (*(char *)haystack == '\0' && *(char *)needle == '\0')
-        return ((char *)haystack);
-    else if (*(char *)haystack == '\0')
-        return (0);
-    else if (*(char *)needle == '\0')
-        return ((char *)haystack);
-    while (haystack && len > 0)
-    {
-        i = len;
-        p_haystack = (char *)haystack;
-        p_needle = (char *)needle;
-        while (*p_haystack == *p_needle && i > 0 && *p_haystack != '\0')//aqui
-        {
-            if (i == 0 && !p_needle)
-                return (0);
-            i--;
-            p_needle++;
-            p_haystack++;
-            if (i != 0 && *p_haystack == '\0' && *p_needle)
-                return (0);
-        }
-        if (*p_needle == '\0')
-            return ((char *)haystack);
-        len--;
-        haystack++;
-    }
-    return (0);
+	if (*(char *)haystack == '\0' && *(char *)needle == '\0')
+		return ((char *)haystack);
+	else if (*(char *)haystack == '\0')
+		return (0);
+	else if (*(char *)needle == '\0')
+		return ((char *)haystack);
+	while (haystack && len > 0)
+	{
+		i = len;
+		p_haystack = (char *)haystack;
+		p_needle = (char *)needle;
+		while (*p_haystack == *p_needle && i > 0 && *p_haystack != '\0')//aqui
+		{
+			if (i == 0 && !p_needle)
+				return (0);
+			i--;
+			p_needle++;
+			p_haystack++;
+			if (i != 0 && *p_haystack == '\0' && *p_needle)
+				return (0);
+		}
+		if (*p_needle == '\0')
+			return ((char *)haystack);
+		len--;
+		haystack++;
+	}
+	return (0);
 }
 
 // #include <stdio.h>

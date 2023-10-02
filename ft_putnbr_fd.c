@@ -14,7 +14,7 @@
 
 static void ft_putchar(int nb, int fd)
 {
-    write(fd, &nb, 1);
+	write(fd, &nb, 1);
 }
 
 void ft_putnbr_fd(int nb, int fd)

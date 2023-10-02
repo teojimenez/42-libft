@@ -31,12 +31,12 @@
 // 	return ((size_t)ft_strlen(dest) + dstsize);
 // }
 
-size_t    ft_strlcat(char *dest, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
-    size_t    i;
-    size_t    y;
-	size_t    srcLen;
-    size_t    destLen;
+	size_t	i;
+	size_t	y;
+	size_t	srcLen;
+	size_t	destLen;
 
 	srcLen = (size_t)ft_strlen(src);
 	destLen = (size_t)ft_strlen(dest);
