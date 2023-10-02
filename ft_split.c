@@ -32,12 +32,12 @@ static int ft_char_counter(char const *s, char c)
     return (words);
 }
 
-// static void free_split(char **s, int i)
-// {
-// 	while(i-- > 0)
-// 		free(s[i]);
-// 	free(s);
-// }
+static void free_split(char **s, int i)
+{
+	while(i-- > 0)
+		free(s[i]);
+	free(s);
+}
 
 char **ft_split(char const *s, char c)
 {
@@ -71,7 +71,10 @@ char **ft_split(char const *s, char c)
         }
         matriz[i] = (char *)ft_calloc(len + 1, sizeof(char));
 		if (!matriz[i])
-			return (0);
+        {
+			free_split(matriz, filas);
+            return (0);
+        }
 		i++;
         len = 0;
     }
@@ -86,12 +89,12 @@ char **ft_split(char const *s, char c)
         //mientras s no sea ni search ni null
         //while() -> avanzamos s y j, despues de la copia
         while (*copy_s != c && *copy_s)
+        
             matriz[i][j++] = *copy_s++;
         //reiniciamos j, para que empieze en el inicio de la memoria
         j = 0;
         i++;
     }
-	// free_split(matriz, filas);
     return (matriz);
 }
 
