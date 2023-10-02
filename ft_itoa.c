@@ -12,23 +12,24 @@
 
 #include "libft.h"
 
-static int ft_len_int(int nb)
+static int  ft_len_int(int nb)
 {
-    int i;
-    i = 0;
-    if (nb == 0)
-        return (1);
-    if (nb < 0)
-    {
-      nb = -nb;
-      i++;
-    }
-    while(nb > 0)
-    {
-        nb /= 10;
-        i++;
-    }
-    return (i);
+	int i;
+
+	i = 0;
+	if (nb == 0)
+		return (1);
+	if (nb < 0)
+	{
+		nb = -nb;
+		i++;
+	}
+	while(nb > 0)
+	{
+		nb /= 10;
+		i++;
+	}
+	return (i);
 }
 
 char *ft_itoa(int nb)

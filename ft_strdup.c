@@ -14,17 +14,17 @@
 
 char	*ft_strdup(const char *s1)
 {
-    char *memory;
-    int i;
+	char	*memory;
+	int		i;
 
-    i = -1;
-    memory = (char *)malloc(ft_strlen(s1) + 1);
-    if (!memory)
-        return (NULL);
-    while(s1[++i])
-        memory[i] = s1[i];
-    memory[i] = '\0';
-    return (memory);
+	i = -1;
+	memory = (char *)malloc(ft_strlen(s1) + 1);
+	if (!memory)
+	return (NULL);
+	while(s1[++i])
+		memory[i] = s1[i];
+	memory[i] = '\0';
+	return (memory);
 }
     // The strdup() function allocates sufficient memory for a copy of the
     //  string s1, does the copy, and returns a pointer to it.  The pointer may

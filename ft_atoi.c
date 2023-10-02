@@ -12,10 +12,9 @@
 
 #include "libft.h"
 
-//ascii to int
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-    int	i;
+	int	i;
 	int	nb;
 	int	sig;
 
@@ -28,14 +27,14 @@ int ft_atoi(const char *str)
 	{
 		if (str[i] == '-')
 			sig = sig * -1;
-        if (str[i+1] == '-' || str[i+1] == '+')
-            return (0);
+		if (str[i+1] == '-' || str[i+1] == '+')
+			return (0);
 		i++;
 	}
-    while (str[i] >= '0' && str[i] <= '9')
-    {
-        nb = (nb * 10) + (str[i] - '0');
-        i++;
-    }
-    return (nb * sig);
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		nb = (nb * 10) + (str[i] - '0');
+		i++;
+	}
+	return (nb * sig);
 }

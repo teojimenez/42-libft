@@ -12,20 +12,20 @@
 
 #include "libft.h"
 
-void    *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t i;
-    unsigned char *c_str;
+	size_t	i;
+	unsigned char	*c_str;
 
-    c_str = (unsigned char *)s;
-    i = 0;
-    while (i < n)
-    {
-        if (c_str[i] == (unsigned char)c)
-            return (&c_str[i]);
-        i++;
-    }
-    return (0);
+	c_str = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		if (c_str[i] == (unsigned char)c)
+			return (&c_str[i]);
+		i++;
+	}
+	return (0);
 }
 
 // The memchr() function locates the first occurrence of c (converted to an

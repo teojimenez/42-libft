@@ -19,9 +19,9 @@ static void ft_putchar(int nb, int fd)
 
 void ft_putnbr_fd(int nb, int fd)
 {
-    if (fd < 0)
-        return ;
-    if (nb == -2147483648)
+	if (fd < 0)
+		return ;
+	if (nb == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;

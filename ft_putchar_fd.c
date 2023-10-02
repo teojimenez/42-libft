@@ -14,9 +14,9 @@
 
 void ft_putchar_fd(char c, int fd)
 {
-    if (fd < 0)
-        return ;
-    write(fd, &c, 1);
+	if (fd < 0)
+		return ;
+	write(fd, &c, 1);
 }
 // size_t write(int fd, const void *buf, size_t count);
 // fd: Es el descriptor de archivo en el cual se va a escribir. 
