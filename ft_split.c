@@ -80,14 +80,24 @@ static char	**memory_in_str(char **matriz, const char *s, char c, int filas)
 		}
 
 		matriz[i] = (char *)ft_calloc(len + 1, sizeof(char));
+		// if (!matriz[i])
+		// {
+		// 	free_split(matriz, filas);
+		// 	return (0);
+		// }
 		if (!matriz[i])
 		{
-			free_split(matriz, filas);
+			free(matriz[i]);
 			return (0);
 		}
 		i++;
 		len = 0;
 	}
+	if (!matriz)
+		{
+			free_split(matriz, filas);
+			return (0);
+		}
 	return(matriz);
 }
 
