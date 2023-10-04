@@ -38,3 +38,12 @@ int	ft_atoi(const char *str)
 	}
 	return (nb * sig);
 }
+
+//paso de ascii a int
+// #include <stdio.h>
+// int main(void)
+// {
+// 	printf("Expected:-123\nYours:%i\n", ft_atoi("-123"));
+// 	printf("Expected:12\nYours:%i\n", ft_atoi("       +12 3"));
+// 	printf("Expected:0\nYours:%i\n", ft_atoi("   0"));
+// }

@@ -19,9 +19,10 @@ int	ft_isascii(int c)
 	return (0);
 }
 
-// int main()
+//verifica que sea ascii
+// #include <stdio.h>
+// int main(void)
 // {
-// 	printf("%i",ft_isascii(128));
-//     printf("%i",isascii(128));
-// 	return (0);
+// 	printf("Expected:1\nYours:%i\n", ft_isascii(70));
+// 	printf("Expected:0\nYours:%i\n", ft_isascii(130));
 // }

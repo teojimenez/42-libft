@@ -17,9 +17,10 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-// int main()
+//verifica que sea digito
+// #include <stdio.h>
+// int main(void)
 // {
-// 	printf("%i",ft_isdigit(22));
-//     printf("%i",isdigit(22));
-// 	return (0);
+// 	printf("Expected:2048\nYours:%i\n", ft_isdigit(55));
+// 	printf("Expected:0\nYours:%i\n", ft_isdigit(93));
 // }

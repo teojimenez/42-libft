@@ -19,9 +19,11 @@ int	ft_isprint(int c)
 	return (0);
 }
 
-// int main()
+//verifica que sea printeable
+// #include <stdio.h>
+// #include <ctype.h>
+// int main(void)
 // {
-// 	printf("%i",ft_isprint(126));
-//     printf("%i",isprint(126));
-// 	return (0);
+// 	printf("Expected:%i\nYours:%i\n",isprint(70), ft_isprint(70));
+// 	printf("Expected:%i\nYours:%i\n",isprint(4), ft_isprint(4));
 // }

@@ -22,3 +22,5 @@ void	ft_bzero(void *str, size_t n)
 	while (i < n)
 		c[i++] = '\0';
 }
+
+//rellena punteros con null

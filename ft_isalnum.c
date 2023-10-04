@@ -23,9 +23,12 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-// int main()
+//verifica que sea numerico y alfabetico
+// #include <stdio.h>
+// int main(void)
 // {
-// 	printf("%i",ft_isalnum(48));
-//     printf("%i",isalnum(100));
-// 	return (0);
+// 	printf("Expected:8\nYours:%i\n", ft_isalnum(120));
+// 	printf("Expected:8\nYours:%i\n", ft_isalnum(97));
+// 	printf("Expected:8\nYours:%i\n", ft_isalnum(55));
+// 	printf("Expected:0\nYours:%i\n", ft_isalnum(93));
 // }

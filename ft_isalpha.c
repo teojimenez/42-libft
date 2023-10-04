@@ -20,11 +20,12 @@ int	ft_isalpha(int c)
 		return (1024);
 	return (0);
 }
-//1024: true, =: false
 
-// int main()
+//verifica que sea alfabetico
+// #include <stdio.h>
+// int main(void)
 // {
-// 	printf("%i",ft_isalpha(80));
-//     printf("%i",isalpha(80));
-// 	return (0);
+// 	printf("Expected:1024\nYours:%i\n", ft_isalpha(70));
+// 	printf("Expected:1024\nYours:%i\n", ft_isalpha(97));
+// 	printf("Expected:0\nYours:%i\n", ft_isalpha(93));
 // }
