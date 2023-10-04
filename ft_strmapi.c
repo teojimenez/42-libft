@@ -21,10 +21,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	len = ft_strlen((char *)s);
 	new_str = (char *)ft_calloc(len + 1, sizeof(char));
-
-	if (!new_str || !s || !f )
+	if (!new_str || !s || !f)
 		return (0);
-	while(s[i])
+	while (s[i])
 	{
 		new_str[i] = f(i, s[i]);
 		i++;
@@ -37,7 +36,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 // carácter dentro de ’s’ y la dirección del propio
 // carácter, que podrá modificarse si es necesario
 
-// char convertir_a_mayuscula(unsigned int index, char c) 
+// char conv_may(unsigned int index, char c) 
 // {
 //     index = index + 0;
 //     if (c >= 'a' && c <= 'z') {
@@ -48,5 +47,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 // int main()
 // {
-//     printf("%s", ft_strmapi("HoLa asdLAfsdf3e34", convertir_a_mayuscula)); //HOLA
+//     printf("%s", ft_strmapi("HoLa asdLAfsdf3e34", conv_may)); //HOLA
 // }

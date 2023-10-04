@@ -12,12 +12,12 @@
 
 #include "libft.h"
 
-static void ft_putchar(int nb, int fd)
+static void	ft_putchar(int nb, int fd)
 {
 	write(fd, &nb, 1);
 }
 
-void ft_putnbr_fd(int nb, int fd)
+void	ft_putnbr_fd(int nb, int fd)
 {
 	if (fd < 0)
 		return ;

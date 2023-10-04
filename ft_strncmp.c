@@ -14,8 +14,8 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t  i;
-	int len_s1;
+	size_t	i;
+	int		len_s1;
 
 	len_s1 = ft_strlen(s1);
 	i = 0;

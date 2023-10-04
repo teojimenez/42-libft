@@ -12,24 +12,18 @@
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+static char	*extra(const char *haystack, const char *needle, size_t len)
 {
 	char	*p_needle;
 	char	*p_haystack;
 	size_t	i;
 
-	if (*(char *)haystack == '\0' && *(char *)needle == '\0')
-		return ((char *)haystack);
-	else if (*(char *)haystack == '\0')
-		return (0);
-	else if (*(char *)needle == '\0')
-		return ((char *)haystack);
 	while (haystack && len > 0)
 	{
 		i = len;
 		p_haystack = (char *)haystack;
 		p_needle = (char *)needle;
-		while (*p_haystack == *p_needle && i > 0 && *p_haystack != '\0')//aqui
+		while (*p_haystack == *p_needle && i > 0 && *p_haystack != '\0')
 		{
 			if (i == 0 && !p_needle)
 				return (0);
@@ -47,6 +41,20 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (0);
 }
 
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+{
+	char	*result;
+
+	if (*(char *)haystack == '\0' && *(char *)needle == '\0')
+		return ((char *)haystack);
+	else if (*(char *)haystack == '\0')
+		return (0);
+	else if (*(char *)needle == '\0')
+		return ((char *)haystack);
+	result = extra(haystack, needle, len);
+	return (result);
+}
+
 // #include <stdio.h>
 // #include <string.h>
 
@@ -56,13 +64,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 //     //char *strnstr(const char *haystack, const char *needle, size_t len);
 //     return 0;
 // }
-
-// The strnstr() function locates the first occurrence of the null-termi-
-//      nated string needle in the string haystack, where not more than len char-
-//      acters are searched.  Characters that appear after a `\0' character are
-//      not searched.  Since the strnstr() function is a FreeBSD specific API, it
-//      should only be used when portability is not a concern
-
-// If needle is an empty string, haystack is returned; if needle occurs
-//      nowhere in haystack, NULL is returned; otherwise a pointer to the first
-//      character of the first occurrence of needle is returned.

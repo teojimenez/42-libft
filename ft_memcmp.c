@@ -14,9 +14,9 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t  i;
-	char * c_s1;
-	char * c_s2;
+	size_t	i;
+	char	*c_s1;
+	char	*c_s2;
 
 	c_s1 = (char *)s1;
 	c_s2 = (char *)s2;
@@ -35,8 +35,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 //     Both strings are assumed to be n bytes long.
 
 // RETURN VALUES
-//      The memcmp() function returns zero if the two strings are identical, oth-
-//      erwise returns the difference between the first two differing bytes
+//      The memcmp() function returns zero if the two strings are identical, 
+//      otherwise returns the difference between the first two differing bytes
 //      (treated as unsigned char values, so that `\200' is greater than `\0',
 //      for example).  Zero-length strings are always identical.  This behavior
 //      is not required by C and portable code should only depend on the sign of
