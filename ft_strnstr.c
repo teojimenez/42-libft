@@ -57,10 +57,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 
 // #include <stdio.h>
 // #include <string.h>
-
 // int main() {
-//     printf("MAIN:%s\n", strnstr("abc", "abcdef", 5));
-//     printf("MINE:%s", ft_strnstr("abc", "abcdef", 5));
-//     //char *strnstr(const char *haystack, const char *needle, size_t len);
+// 	char *str = "hola mu, hola mundo HOLA";
+//     printf("MINE:%s\n", ft_strnstr(str, "mundo", 40));//mundo HOLA
+//     printf("MINE:%s\n", ft_strnstr("defabcdef", "abc", 5)); //NULL
 //     return 0;
 // }

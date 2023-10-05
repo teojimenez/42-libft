@@ -25,3 +25,9 @@ void	ft_putendl_fd(char *s, int fd)
 		write(fd, &s[i++], 1);
 	write(fd, &newl, 1);
 }
+
+// int main()
+// {
+// 	ft_putendl_fd("hola mundo!", 1);
+//    return(0);
+// }

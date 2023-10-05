@@ -17,7 +17,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 	char	*result;
 
-	if (!s1 && !s2)
+	if (!s1 || !s2)
 		return (0);
 	str = (char *)ft_calloc(ft_strlen(s1) + ft_strlen(s2) + 1, sizeof(char));
 	if (!str)
@@ -30,9 +30,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (result);
 }
 
-// s1: La primera string.
-// s2: La string a añadir a ’s1’.
-
-// Reserva (con malloc(3)) y devuelve una nueva
-// string, formada por la concatenación de ’s1’ y
-// ’s2’.
+// #include <stdio.h>
+// int main () 
+// {
+//    printf("\n%s\n", ft_strjoin("Hola, ", "Mundo!"));
+//    return(0);
+// }

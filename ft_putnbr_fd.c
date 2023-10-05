@@ -39,3 +39,9 @@ void	ft_putnbr_fd(int nb, int fd)
 	else
 		ft_putchar(nb + '0', fd);
 }
+
+// int main()
+// {
+// 	ft_putnbr_fd(12345, 1);
+//    return(0);
+// }

@@ -42,14 +42,12 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (c_dest);
 }
 
-//segundo caso superposicion, por lo que se copia de forma inversa para evitarla
+//memcpy pero con superposicion
+// #include <stdio.h>
 // int main() 
 // {
 //   char src[] = "Hola memoria"; //13 bytes
 //   char dest[10];
-//   printf("MIO:%s \n", ft_memmove(dest, src, 15));
-//   char src2[] = "Hola memoria"; //13 bytes
-//   char dest2[10];
-//   printf("REAL:%s \n", memmove(dest2, src2, 15));//dest, src, n
+//   printf("MIO:%p \n", ft_memmove(dest, src, 15));
 //   return 0;
 // }

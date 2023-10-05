@@ -28,6 +28,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return ((size_t)ft_strlen((char *)src));
 }
 
+// #include <stdio.h>
 // int main(void)
 // {
 //     // char src[] = "Hola !";

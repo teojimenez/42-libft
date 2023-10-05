@@ -69,3 +69,12 @@ char	*ft_itoa(int nb)
 	str = extra(nb, str, len);
 	return (str);
 }
+
+//paso de int a ascii
+// #include <stdio.h>
+// int main(void)
+// {
+// 	printf("Expected:-123\nYours:%s\n", ft_itoa(-123));
+// 	printf("Expected:12\nYours:%s\n", ft_itoa(12));
+// 	printf("Expected:0\nYours:%s\n", ft_itoa(0));
+// }

@@ -27,10 +27,12 @@ void	*ft_memset(void *str, int value, size_t num)
 	return (str);
 }
 
+//sustituye n char en value
+// #include <stdio.h>
 // int main()
 // {
 // 	char var1[] = "prueba, prueba12345";
-//     memset(var1, '*', 4);
+//     ft_memset(var1, '*', 4);
 //     puts (var1);
 //     return (0);
 // }

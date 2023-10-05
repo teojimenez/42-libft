@@ -22,6 +22,7 @@ int	ft_strlen(const char *str)
 	return (i);
 }
 
+// #include <stdio.h>
 // int main()
 // {
 // 	char var1[] = "Hola";

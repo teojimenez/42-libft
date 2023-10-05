@@ -22,3 +22,9 @@ void	ft_putstr_fd(char *s, int fd)
 	while (s[i])
 		write(fd, &s[i++], 1);
 }
+
+// int main()
+// {
+// 	ft_putstr_fd("hola mundo!", 1);
+//    return(0);
+// }

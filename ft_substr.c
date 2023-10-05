@@ -32,15 +32,19 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return ((char *)sub);
 }
 
-//se tiene que tener en cuenta el len real, no el que tendra la substr
-
-// s: La string desde la que crear la substring.
-// start: El índice del caracter en ’s’ desde el que empezar la substring.
-// len: La longitud máxima de la substring.
-
-//Valor devuelto:  La substring resultante. NULL si falla la reserva de memoria.
-
 // Reserva (con malloc(3)) y devuelve una substring de
 // la string ’s’.
 // La substring empieza desde el índice ’start’ y
 // tiene una longitud máxima ’len’.
+//se tiene que tener en cuenta el len real!
+// #include <stdio.h>
+// int main()
+// {
+// 	printf("\n%s\n", ft_substr("HOLA MUNDO", 5, ft_strlen("HOLA MUNDO")));
+// 	printf("\n%s\n", ft_substr("Neque consectetur, adipisci velit", 6, 70)); 
+// 	//consectetur, adipisci velit
+// 	char *str = "Neque consectetur, adipisci velit"
+// 	printf("\n%s\n", ft_substr(str, 6, ft_strlen("consectetur, adipisci")));
+// 	//consectetur, adipisci
+// 	return (0);
+// }

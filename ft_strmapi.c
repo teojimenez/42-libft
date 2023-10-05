@@ -45,7 +45,9 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 //     return c;
 // }
 
+// #include <stdio.h>
 // int main()
 // {
 //     printf("%s", ft_strmapi("HoLa asdLAfsdf3e34", conv_may)); //HOLA
+//		return (0);
 // }

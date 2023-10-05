@@ -27,8 +27,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 // s: La string que iterar.
 // f: La función a aplicar sobre cada carácter.
 
-//no se devuelve nada y no se puede usar ninguna func
-
 // A cada carácter de la string ’s’, aplica la función
 // ’f’ dando como parámetros el índice de cada
 // carácter dentro de ’s’ y la dirección del propio

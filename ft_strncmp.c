@@ -29,3 +29,12 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+// int main()
+// {
+//     printf("\n%i\n", ft_strncmp("HolaP", "Holap", 5));
+// 	printf("%i\n", ft_strncmp("Holap", "HolaP", 5));
+// 	printf("%i\n", ft_strncmp("HolaWorld", "HolaWoRld", 5));
+// 	return (0);
+// }
